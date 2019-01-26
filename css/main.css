@@ -1,4 +1,6 @@
 /* Hello */
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
 html {
   font-size: 16px;
 }
@@ -8,7 +10,7 @@ html {
 }
 
 body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Karla, Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #fff;
   line-height: 1.1;
 }
