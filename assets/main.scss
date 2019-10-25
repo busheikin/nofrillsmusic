@@ -105,7 +105,7 @@ a:hover {
   }
 }
 
-.tour-dates-row {
+.content-row {
   background: #fff;
   border: 2px solid #000;
   border-top: 0;
@@ -123,6 +123,21 @@ a:hover {
   }
 }
 
+.video-wrapper {
+  overflow: hidden;
+  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video-wrapper iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
 /* The animation code */
 @keyframes placeholder {
