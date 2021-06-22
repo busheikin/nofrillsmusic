@@ -215,6 +215,8 @@ a:hover {
   }
 }
 
+// UTILITIES
+
 .border {
   &-left {
     border-left: 2px solid #000;
@@ -228,4 +230,8 @@ a:hover {
   &-bottom--none {
     border-bottom: 0;
   }
+}
+
+.text-align--left {
+  text-align: left;
 }
