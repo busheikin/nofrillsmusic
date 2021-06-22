@@ -112,6 +112,15 @@ a:hover {
   position: relative;
   padding: 1rem;
 
+  &--flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &--flex > div {
+    flex: 1 1;
+  }
+
   & h2 {
     margin: 0;
     font-size: 1rem;
