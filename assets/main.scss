@@ -49,7 +49,7 @@ a:hover {
   display: flex;
 }
 
-.primary-content {
+.page-margin {
   margin-bottom: 3rem; 
 }
 
@@ -111,15 +111,6 @@ a:hover {
   border-top: 0;
   position: relative;
   padding: 1rem;
-
-  &--flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  &--flex > div {
-    flex: 1 1;
-  }
 
   & h2 {
     margin: 0;
@@ -211,4 +202,16 @@ a:hover {
       font-size: 1rem;
     }
   }
+}
+
+.white-bordered-box {
+  background: #fff;
+  border: 2px solid #000;
+  border-top: 0;
+  position: relative;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
 }
