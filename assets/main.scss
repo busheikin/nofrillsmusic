@@ -186,10 +186,6 @@ a:hover {
     border-bottom: 2px solid #000;
   }
 
-  &__cell--no-border {
-    border: 0;
-  }
-
   &__cell-label {
     transform: rotate(90deg);
     transform-origin: top left;
@@ -207,11 +203,29 @@ a:hover {
 .white-bordered-box {
   background: #fff;
   border: 2px solid #000;
-  border-top: 0;
   position: relative;
 }
 
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+
+  * > div {
+    flex: 1;
+  }
+}
+
+.border {
+  &-left {
+    border-left: 2px solid #000;
+  }
+  &-bottom {
+    border-bottom: 2px solid #000;
+  }
+  &--none {
+    border: 0;
+  }
+  &-bottom--none {
+    border-bottom: 0;
+  }
 }
