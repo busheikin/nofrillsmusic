@@ -210,7 +210,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
 
-  * > div {
+  & > div {
     flex: 1;
   }
 }
