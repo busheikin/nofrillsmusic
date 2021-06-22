@@ -178,17 +178,15 @@ a:hover {
 }
 
 .content-table {
-  
-  &__cell-1,
-  &__cell-2,
-  &__cell-3 {
+
+  &__cell {
     padding: 1rem;
     position: relative;
+    border-bottom: 2px solid #000;
   }
 
-  &__cell-1,
-  &__cell-2 {
-    border-bottom: 2px solid #000;
+  &__cell--no-border {
+    border: 0;
   }
 
   &__cell-label {
