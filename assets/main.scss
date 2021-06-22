@@ -163,6 +163,8 @@ a:hover {
   animation-name: placeholder;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .link-list {
