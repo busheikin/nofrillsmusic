@@ -3,6 +3,12 @@
 
 /* Hello */
 
+// Variables
+$screen-xs-end:       599px;
+$screen-sm-start:     600px;
+
+// Elements
+
 html {
   font-size: 16px;
   height: 100%;
@@ -46,6 +52,9 @@ p {
   font-style: italic;
 }
 
+// Grid
+
+
 .container {
   padding: 1rem 1rem 2rem;
   max-width: 800px;
@@ -54,25 +63,38 @@ p {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
 
-.page-margin {
-  margin-bottom: 3rem; 
-}
-
-@media screen and (min-width: 600px) {
-  .container {
+  @media screen and (min-width: $screen-sm-start) {
     padding: 2rem 2rem 2rem;
     align-items: center;
   }
 }
 
+.col-sm {
+  flex-basis: 100%;
+  @media screen and (min-width: $screen-sm-start){
+    flex: 1;
+    flex-basis: auto;
+  }
+}
+
+.col-sm-6 {
+  flex-basis: 100%;
+  @media screen and (min-width: $screen-sm-start){
+    flex: 1 1 50%;
+  }
+}
+
 .row {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.row--reverse {
   flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: $screen-xs-end) {
   .row {
     flex-wrap: wrap;
   }
@@ -95,7 +117,7 @@ p {
   justify-content: center;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: $screen-xs-end) {
   .column-1,
   .column-2  {
     flex-basis: 100%;
@@ -106,7 +128,7 @@ p {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $screen-sm-start) {
   .column-2 {
     border-right: 0;
   }
