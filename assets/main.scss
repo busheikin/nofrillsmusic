@@ -84,22 +84,9 @@ p {
   }
 }
 
-.col-sm-4 {
-  width: 100%;
-  @media screen and (min-width: $screen-sm-start){
-    width: 25%;
-  }
-}
-
-.col-sm-8 {
-  width: 100%;
-  @media screen and (min-width: $screen-sm-start){
-    width: 75%;
-  }
-}
-
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .row--reverse {
